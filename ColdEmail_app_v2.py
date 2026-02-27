@@ -1,8 +1,9 @@
+import os
+os.environ["CREWAI_DISABLE_TELEMETRY"] = "true"
 import streamlit as st
 from crewai import LLM, Task, Agent, Crew, Process
 from crewai_tools import ScrapeWebsiteTool
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
@@ -373,3 +374,4 @@ st.markdown("""
         Powered by AI Agents • Built with Streamlit
     </div>
 """, unsafe_allow_html=True)
+
